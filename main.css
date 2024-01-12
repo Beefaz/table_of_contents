@@ -1,0 +1,19 @@
+:root {
+}
+
+html {
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", serif;
+    padding: 10px;
+}
+
+main {
+    margin: 0 auto;
+}
