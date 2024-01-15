@@ -18,7 +18,7 @@ body {
 
 main {
     width: 100%;
-    padding: 0 10px 60px;
+    padding: 0 10px 20px 50px;
     max-width: 1100px;
     min-height: 100vh;
     margin: 0 auto;
@@ -37,6 +37,7 @@ main {
 
 ul {
     padding: 0;
+    width: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -49,27 +50,32 @@ li {
     gap: 20px;
 }
 
+li a:nth-of-type(1) {
+    min-width: auto;
+}
+
+@media only screen and (min-width: 550px) {
+    li a:nth-of-type(1) {
+        min-width: max-content;
+    }
+}
+
+li a:nth-of-type(2) {
+    margin-left: auto;
+}
+
 a {
     display: flex;
     text-decoration-line: unset;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 700px) {
-    a {
-        flex-wrap: nowrap;
-    }
-}
-
-a * {
-    flex: 1 0 fit-content;
-}
 
 .dots {
     overflow: hidden;
     flex: unset;
 }
+
 
 .dots:before {
     max-height: 1rem;
