@@ -115,7 +115,7 @@ a {
     -o-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
-    animation: zoom-out 0.3s cubic-bezier(0, -0.01, 1, -0.7);
+    animation: zoom-out 0.3s ease-out;
 }
 
 .wrap:hover {
@@ -131,7 +131,7 @@ a {
     -o-transform: scale(0.2);
     -webkit-transform: scale(0.2);
     transform: scale(0.2);
-    animation: zoom-in 0.5s cubic-bezier(0, -0.01, 1, -0.7);
+    animation: zoom-in 0.3s ease-out;
 }
 
 @keyframes zoom-in {
